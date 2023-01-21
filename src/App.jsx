@@ -1,5 +1,6 @@
 import EmailComponent from "./components/EmailComponent"
 import Features from "./components/Features"
+import PricingPlans from "./components/PricingPlans"
 import PrimaryButton from "./components/PrimaryButton"
 import TopSection from "./components/TopSection"
 
@@ -9,6 +10,7 @@ function App() {
     <div className="">
       <TopSection/>
       <Features/>
+      <PricingPlans/>
     </div>
   )
 }
