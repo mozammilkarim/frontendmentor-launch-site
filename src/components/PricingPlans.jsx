@@ -13,7 +13,7 @@ const PricingPlans = () => {
                 <h1 className='font-[800]  text-3xl mb-[24px]'>Our pricing plans</h1>
                 <p className='text-[#777F98] font-medium '>We only make money when our creators make money. Our plans are always affordable, and it’s completely free to get started.</p>
             </div>
-            <div className='flex flex-col md:flex-row mt-[117px] mb-[151px] gap-[30px]'>
+            <div className='flex flex-col items-center justify-center md:flex-row mt-[117px] pb-[151px] gap-[30px]'>
                 <div className='flex flex-col py-[48px] px-[38px] rounded-[2rem] bg-[#093F68]'>
                     <h2 className=' font-[800] text-lg bg-inherit'>Dip your toe</h2>
                     <p className='mt-[19px] mb-[24px] bg-inherit font-medium opacity-[0.6] max-w-[369px]'>Just getting started? No problem at all! Our free plan will take you a long way.</p>
