@@ -7,10 +7,12 @@ import scrollImage from "../../assets/icon-scroll.svg";
 
 const TopSection = () => {
     return (
-        <div className='flex justify-center relative overflow-hidden h-[460px]'>
-            <div className='relative -left-10'>
+        <div className='flex justify-center flex-col sm:flex-row relative overflow-hidden sm:h-[460px]'>
+            <div className='relative sm:-left-10 my-auto flex sm:block justify-center w-[408px] '>
 
-                <img src={leftImage} alt="" />
+                <img src={leftImage} alt="" className='block'/>
+                <img src={rightImage} alt="" className='block sm:hidden'/>
+                
             </div>
             <div className=' my-auto flex flex-col items-center' style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
                 <div className='font-[800] text-6xl text-white'>
@@ -24,7 +26,7 @@ const TopSection = () => {
                 </div>
                 {/* <img src={heroImage} alt="" className='absolute z-[2]' /> */}
             </div>
-            <div className='relative -right-10'>
+            <div className='relative sm:-right-10 my-auto hidden sm:block'>
 
                 <img src={rightImage} alt="" />
             </div>

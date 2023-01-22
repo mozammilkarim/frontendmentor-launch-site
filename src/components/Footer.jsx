@@ -2,21 +2,29 @@ import React from 'react'
 import EmailComponent from './EmailComponent'
 import PrimaryButton from './PrimaryButton'
 import heroImage from "../../assets/bg-hero-squiggle.svg";
-
+import  "./bgCss.css";
 const Footer = () => {
+    // style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} 
     return (
-        <div className='pb-[159px] mt-[42px]' style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover" }} >
-            <div className=''>
-                <h2 className='text-[32px] pb-[42px] text-center mx-auto font-[800] text-white max-w-[730px] w-full'>Get notified when we launch</h2>
-                <div className='mx-auto flex flex-col sm:flex-row justify-center gap-[16px]'>
+        <footer className='relative' >
+            {/* <div className='relative w-full max-h-[228px]'>
+                <img src={heroImage} className="absolute w-full max-h-full" alt="" />
+
+            </div> */}
+            <div className='mx-auto w-full footer' >
+                <h2 className='text-[32px] mb-[42px] text-center mx-auto font-[800] text-white max-w-[730px] w-fit' >Get notified when we launch</h2>
+                <div className='mx-auto w-fit flex flex-col sm:flex-row justify-center gap-[16px]'>
+                    <div>
+
                     <EmailComponent />
-                    <div className=' mx-auto'>
+                    </div>
+                    <div className='sm:m-0  w-fit'>
 
                         <PrimaryButton />
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
